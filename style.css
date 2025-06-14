@@ -1,0 +1,104 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #fafafa;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+#expenseForm {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+#expenseForm input,
+#expenseForm select,
+#expenseForm button {
+  padding: 8px 12px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+}
+
+#expenseForm button {
+  background: #21a366;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.2s;
+}
+
+#expenseForm button:hover {
+  background: #178c53;
+}
+
+#expenseTable {
+  width: 90%;
+  margin: 0 auto 10px auto;
+  border-collapse: collapse;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+}
+
+#expenseTable th,
+#expenseTable td {
+  border: 2px solid #eee;
+  padding: 10px 12px;
+  text-align: left;
+}
+
+#expenseTable th {
+  background: #f5f5f5;
+  font-weight: bold;
+}
+
+#expenseTable td button {
+  margin-right: 5px;
+  padding: 4px 10px;
+  font-size: 15px;
+  border: 2px solid #bbb;
+  border-radius: 3px;
+  background: #f5f5f5;
+  cursor: pointer;
+}
+
+#expenseTable td button:hover {
+  background: #e0e0e0;
+}
+
+#totalContainer {
+  width: 90%;
+  margin: 0 auto;
+  text-align: right;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#filterContainer {
+  width: 90%;
+  margin: 0 auto 30px auto;
+  text-align: right;
+}
+
+#filterContainer label {
+  margin-right: 8px;
+  font-size: 16px;
+}
+
+#categoryFilter {
+  padding: 6px 10px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}

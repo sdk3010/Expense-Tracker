@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Expense Tracker</h1>
+  <form id="expenseForm">
+    <input type="text" id="expenseName" placeholder="Expense Name" required>
+    <input type="number" id="expenseAmount" placeholder="Amount" required>
+    <select id="expenseCategory">
+      <option value="Food">Food</option>
+      <option value="Transport">Transport</option>
+      <option value="Mobiles">Mobiles</option>
+      <option value="Recharges">Recharges</option>
+      <option value="Shopping">Shopping</option>
+      <option value="Fuel">Fuel</option>
+      <!-- More categories -->
+    </select>
+    <input type="date" id="expenseDate" required>
+    <button type="submit">Add Expense</button>
+  </form>
+
+  <table id="expenseTable">
+    <thead>
+      <tr>
+        <th>Expense Name</th>
+        <th>Amount</th>
+        <th>Category</th>
+        <th>Date</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Expenses go here -->
+    </tbody>
+  </table>
+
+  <div id="totalContainer">
+    Total: <span id="totalAmount">$0.00</span>
+  </div>
+
+  <div id="filterContainer">
+    <label for="categoryFilter">Filter by Category:</label>
+    <select id="categoryFilter">
+      <option value="all">All</option>
+      <option value="Food">Food</option>
+      <option value="Transport">Transport</option>
+      <option value="Mobiles">Mobiles</option>
+      <option value="Recharges">Recharges</option>
+      <option value="Shopping">Shopping</option>
+      <option value="Fuel">Fuel</option>
+    </select>
+  </div>
+  <script src="index.js"></script>
+
+</body>
+
+</html>
