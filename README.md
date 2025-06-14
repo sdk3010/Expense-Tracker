@@ -1,6 +1,6 @@
 Expense Tracker
 Objective:
- Create a personal expense tracker to log income and expenses and display balance.
+ Personal expense tracker to log income and expenses and display balance.
  
 Output (Reference):
 ![image](https://github.com/user-attachments/assets/9aece154-c7be-48d8-8f0a-1790bd751205)
@@ -11,20 +11,20 @@ Output (Reference):
 
 
 Requirements:
-Add transaction form
-
-
-Display income, expense, balance
-
-
-Delete transaction option
-
-
-Store transactions in localStorage
+   Add transaction form
+   
+   
+   Display income, expense, balance
+   
+   
+   Delete transaction option
+   
+   
+   Store transactions in localStorage
 
 
 Bonus:
-Category filter
+   Category filter
 
 Tech Stack:
  HTML, CSS, JavaScript
