@@ -1,4 +1,3 @@
-// // Select elements
 let expenseForm = document.getElementById('expenseForm');
 let expenseName = document.getElementById('expenseName');
 let expenseAmount = document.getElementById('expenseAmount');
@@ -8,7 +7,6 @@ let expenseTable = document.getElementById('expenseTable');
 let totalAmount = document.getElementById('totalAmount');
 let categoryFilter = document.getElementById('categoryFilter');
 
-// Ensure expenses array is initialized and loaded
 let expenses = JSON.parse(localStorage.getItem('expenses')) || [];
 updateExpenseTable(expenses);
 updateTotal(expenses);
@@ -19,22 +17,18 @@ expenseForm.addEventListener('submit', function(e) {
   let amount = expenseAmount.value;
   let category = expenseCategory.value;
   let date = expenseDate.value;
-  // Create expense object
-  let expense = { name, amount, category, date };
-  // Add to expenses array
+  
+  let expense = { name, amount, category, date }
   expenses.push(expense);
-  // Save to localStorage
   localStorage.setItem('expenses', JSON.stringify(expenses));
-  // Update UI
   updateExpenseTable(expenses);
   updateTotal(expenses);
-  // Reset form
   expenseForm.reset();
 });
 
 function updateExpenseTable(expensesToShow) {
   let tbody = expenseTable.querySelector('tbody');
-  if (!tbody) { // If tbody doesn't exist, create it
+  if (!tbody) {
     tbody = document.createElement('tbody');
     expenseTable.appendChild(tbody);
   }
@@ -50,7 +44,6 @@ function updateExpenseTable(expensesToShow) {
     `;
     tbody.appendChild(row);
   });
-  // Add delete button event listeners
   document.querySelectorAll('.delete-btn').forEach(btn => {
     btn.addEventListener('click', function() {
       deleteExpense(parseInt(this.getAttribute('data-id')));
